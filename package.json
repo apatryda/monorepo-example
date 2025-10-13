@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^9.0.0"
+    "lerna": "^9.0.0",
+    "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.10.3"
 }
