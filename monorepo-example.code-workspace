@@ -2,6 +2,14 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "name": "nest-app",
+      "path": "packages/nest-app"
+    },
+    {
+      "name": "vue-app",
+      "path": "packages/vue-app"
     }
   ],
   "settings": {
