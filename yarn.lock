@@ -12372,6 +12372,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"supports-color@npm:^10.2.2":
+  version: 10.2.2
+  resolution: "supports-color@npm:10.2.2"
+  checksum: 10c0/fb28dd7e0cdf80afb3f2a41df5e068d60c8b4f97f7140de2eaed5b42e075d82a0e980b20a2c0efd2b6d73cfacb55555285d8cc719fa0472220715aefeaa1da7c
+  languageName: node
+  linkType: hard
+
 "supports-color@npm:^7.1.0":
   version: 7.2.0
   resolution: "supports-color@npm:7.2.0"
@@ -13468,6 +13475,7 @@ __metadata:
     pug: "npm:^3.0.3"
     pug-plain-loader: "npm:^1.1.0"
     sass-embedded: "npm:^1.92.1"
+    supports-color: "npm:^10.2.2"
     typescript: "npm:~5.9.2"
     unplugin-auto-import: "npm:^20.1.0"
     unplugin-fonts: "npm:^1.4.0"

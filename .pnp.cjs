@@ -4152,7 +4152,7 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "supports-color",\
-      "npm:7.2.0"\
+      "npm:10.2.2"\
     ],\
     [\
       "supports-preserve-symlinks-flag",\
@@ -19686,6 +19686,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["supports-color", [\
+      ["npm:10.2.2", {\
+        "packageLocation": "./.yarn/cache/supports-color-npm-10.2.2-e43ac15f9f-fb28dd7e0c.zip/node_modules/supports-color/",\
+        "packageDependencies": [\
+          ["supports-color", "npm:10.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:7.2.0", {\
         "packageLocation": "./.yarn/cache/supports-color-npm-7.2.0-606bfcf7da-afb4c88521.zip/node_modules/supports-color/",\
         "packageDependencies": [\
@@ -21051,6 +21058,7 @@ const RAW_RUNTIME_STATE =
           ["pug", "npm:3.0.3"],\
           ["pug-plain-loader", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:1.1.0"],\
           ["sass-embedded", "npm:1.93.2"],\
+          ["supports-color", "npm:10.2.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["unplugin-auto-import", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:20.2.0"],\
           ["unplugin-fonts", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:1.4.0"],\
