@@ -9962,6 +9962,7 @@ const RAW_RUNTIME_STATE =
           ["estree-walker", "npm:2.0.2"],\
           ["magic-string", "npm:0.30.19"],\
           ["postcss", "npm:8.5.6"],\
+          ["pug", "npm:3.0.3"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
