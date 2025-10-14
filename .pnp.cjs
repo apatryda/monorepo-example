@@ -1061,6 +1061,10 @@ const RAW_RUNTIME_STATE =
       "npm:2.1.5"\
     ],\
     [\
+      "@types/debug",\
+      "npm:4.1.12"\
+    ],\
+    [\
       "@types/eslint",\
       "npm:9.6.1"\
     ],\
@@ -1119,6 +1123,10 @@ const RAW_RUNTIME_STATE =
     [\
       "@types/minimist",\
       "npm:1.2.5"\
+    ],\
+    [\
+      "@types/ms",\
+      "npm:2.1.0"\
     ],\
     [\
       "@types/node",\
@@ -8961,6 +8969,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/debug", [\
+      ["npm:4.1.12", {\
+        "packageLocation": "./.yarn/cache/@types-debug-npm-4.1.12-82a3fc4905-5dcd465edb.zip/node_modules/@types/debug/",\
+        "packageDependencies": [\
+          ["@types/debug", "npm:4.1.12"],\
+          ["@types/ms", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/eslint", [\
       ["npm:9.6.1", {\
         "packageLocation": "./.yarn/cache/@types-eslint-npm-9.6.1-31a8cf74e4-69ba24fee6.zip/node_modules/@types/eslint/",\
@@ -9107,6 +9125,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-minimist-npm-1.2.5-c85664a9d8-3f791258d8.zip/node_modules/@types/minimist/",\
         "packageDependencies": [\
           ["@types/minimist", "npm:1.2.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/ms", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/@types-ms-npm-2.1.0-529ef799cc-5ce692ffe1.zip/node_modules/@types/ms/",\
+        "packageDependencies": [\
+          ["@types/ms", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9820,15 +9847,19 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@vitejs-plugin-vue-virtual-143cad8440/0/cache/@vitejs-plugin-vue-npm-6.0.1-c0994bf42d-6d11fa9637.zip/node_modules/@vitejs/plugin-vue/",\
         "packageDependencies": [\
           ["@rolldown/pluginutils", "npm:1.0.0-beta.29"],\
+          ["@types/supports-color", null],\
           ["@types/vite", null],\
           ["@types/vue", null],\
           ["@vitejs/plugin-vue", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:6.0.1"],\
+          ["supports-color", "npm:10.2.2"],\
           ["vite", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:7.1.9"],\
           ["vue", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:3.5.22"]\
         ],\
         "packagePeers": [\
+          "@types/supports-color",\
           "@types/vite",\
           "@types/vue",\
+          "supports-color",\
           "vite",\
           "vue"\
         ],\
@@ -12182,11 +12213,10 @@ const RAW_RUNTIME_STATE =
           ["@types/supports-color", null],\
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["ms", "npm:2.1.3"],\
-          ["supports-color", null]\
+          ["supports-color", "npm:10.2.2"]\
         ],\
         "packagePeers": [\
-          "@types/supports-color",\
-          "supports-color"\
+          "@types/supports-color"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -20687,7 +20717,7 @@ const RAW_RUNTIME_STATE =
           ["@types/vue-router", null],\
           ["@types/vue__compiler-sfc", null],\
           ["@vue-macros/common", "virtual:5da2e73a3d3e7634e36ac1b1e475e99538f910279d889646e4ea7f34b2633e5a8562c380b0708874ea3c508d4301386abc6d5b93834c26f1f1b59d9dcba0b547#npm:3.0.0-beta.16"],\
-          ["@vue/compiler-sfc", null],\
+          ["@vue/compiler-sfc", "npm:3.5.22"],\
           ["@vue/language-core", "virtual:5da2e73a3d3e7634e36ac1b1e475e99538f910279d889646e4ea7f34b2633e5a8562c380b0708874ea3c508d4301386abc6d5b93834c26f1f1b59d9dcba0b547#npm:3.1.1"],\
           ["ast-walker-scope", "npm:0.8.3"],\
           ["chokidar", "npm:4.0.3"],\
@@ -20883,6 +20913,7 @@ const RAW_RUNTIME_STATE =
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
           ["@types/sugarss", null],\
+          ["@types/supports-color", null],\
           ["@types/terser", null],\
           ["@types/tsx", null],\
           ["@types/yaml", null],\
@@ -20899,6 +20930,7 @@ const RAW_RUNTIME_STATE =
           ["sass-embedded", "npm:1.93.2"],\
           ["stylus", null],\
           ["sugarss", null],\
+          ["supports-color", "npm:10.2.2"],\
           ["terser", null],\
           ["tinyglobby", "npm:0.2.15"],\
           ["tsx", null],\
@@ -20914,6 +20946,7 @@ const RAW_RUNTIME_STATE =
           "@types/sass",\
           "@types/stylus",\
           "@types/sugarss",\
+          "@types/supports-color",\
           "@types/terser",\
           "@types/tsx",\
           "@types/yaml",\
@@ -20924,6 +20957,7 @@ const RAW_RUNTIME_STATE =
           "sass",\
           "stylus",\
           "sugarss",\
+          "supports-color",\
           "terser",\
           "tsx",\
           "yaml"\
@@ -21048,9 +21082,12 @@ const RAW_RUNTIME_STATE =
           ["@fontsource/roboto", "npm:5.2.7"],\
           ["@mdi/font", "npm:7.4.47"],\
           ["@tsconfig/node22", "npm:22.0.2"],\
+          ["@types/debug", "npm:4.1.12"],\
           ["@types/node", "npm:22.18.10"],\
           ["@vitejs/plugin-vue", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:6.0.1"],\
+          ["@vue/compiler-sfc", "npm:3.5.22"],\
           ["@vue/tsconfig", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:0.8.1"],\
+          ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["eslint", "virtual:c4d1072d4df87e5312700269f965cbcd8f603a5ece8ef30c8831c3013a86407f8d5ba9d593094c4112fbabfbb50e0ab18f5f5383968a5d5e1cee62c79fa404bb#npm:9.37.0"],\
           ["eslint-config-vuetify", "virtual:6a1376d1c62d7851903849d92b5e4e6fa7eafad672501dd6684cf4bf66293b977a18eeff15aab8168243ae6124c3deb5b59912d118a6ab91813733d3d4eb60f6#npm:4.2.0"],\
           ["npm-run-all2", "npm:8.0.4"],\
