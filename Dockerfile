@@ -12,9 +12,9 @@ WORKDIR /monorepo
 
 RUN corepack enable
 
+COPY --chown=node:node docker-entrypoint.sh docker-entrypoint.sh
 COPY --chown=node:node lerna.json lerna.json
 COPY --chown=node:node .yarnrc.yml .yarnrc.yml
-COPY --chown=node:node docker-entrypoint.sh docker-entrypoint.sh
 COPY --chown=node:node .pnp.cjs .pnp.cjs
 COPY --chown=node:node .pnp.loader.mjs .pnp.mjs
 COPY --chown=node:node .yarn/ .yarn/
