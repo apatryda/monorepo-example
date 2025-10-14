@@ -1054,6 +1054,77 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@example/nest-app@workspace:packages/nest-app":
+  version: 0.0.0-use.local
+  resolution: "@example/nest-app@workspace:packages/nest-app"
+  dependencies:
+    "@eslint/eslintrc": "npm:^3.2.0"
+    "@eslint/js": "npm:^9.18.0"
+    "@nestjs/cli": "npm:^11.0.0"
+    "@nestjs/common": "npm:^11.0.1"
+    "@nestjs/core": "npm:^11.0.1"
+    "@nestjs/platform-express": "npm:^11.0.1"
+    "@nestjs/schematics": "npm:^11.0.0"
+    "@nestjs/testing": "npm:^11.0.1"
+    "@types/express": "npm:^5.0.0"
+    "@types/jest": "npm:^30.0.0"
+    "@types/node": "npm:^22.10.7"
+    "@types/supertest": "npm:^6.0.2"
+    eslint: "npm:^9.18.0"
+    eslint-config-prettier: "npm:^10.0.1"
+    eslint-plugin-prettier: "npm:^5.2.2"
+    globals: "npm:^16.0.0"
+    jest: "npm:^30.0.0"
+    prettier: "npm:^3.4.2"
+    reflect-metadata: "npm:^0.2.2"
+    rxjs: "npm:^7.8.1"
+    source-map-support: "npm:^0.5.21"
+    supertest: "npm:^7.0.0"
+    ts-jest: "npm:^29.2.5"
+    ts-loader: "npm:^9.5.2"
+    ts-node: "npm:^10.9.2"
+    tsconfig-paths: "npm:^4.2.0"
+    typescript: "npm:^5.7.3"
+    typescript-eslint: "npm:^8.20.0"
+  languageName: unknown
+  linkType: soft
+
+"@example/vue-app@workspace:packages/vue-app":
+  version: 0.0.0-use.local
+  resolution: "@example/vue-app@workspace:packages/vue-app"
+  dependencies:
+    "@fontsource/roboto": "npm:5.2.7"
+    "@mdi/font": "npm:7.4.47"
+    "@tsconfig/node22": "npm:^22.0.0"
+    "@types/debug": "npm:^4"
+    "@types/node": "npm:^22.9.0"
+    "@vitejs/plugin-vue": "npm:^6.0.1"
+    "@vue/compiler-sfc": "npm:^3.5.22"
+    "@vue/tsconfig": "npm:^0.8.1"
+    debug: "npm:^4.4.3"
+    eslint: "npm:^9.35.0"
+    eslint-config-vuetify: "npm:^4.2.0"
+    npm-run-all2: "npm:^8.0.4"
+    pinia: "npm:^3.0.3"
+    pug: "npm:^3.0.3"
+    pug-plain-loader: "npm:^1.1.0"
+    sass-embedded: "npm:^1.92.1"
+    supports-color: "npm:^10.2.2"
+    typescript: "npm:~5.9.2"
+    unplugin-auto-import: "npm:^20.1.0"
+    unplugin-fonts: "npm:^1.4.0"
+    unplugin-vue-components: "npm:^29.0.0"
+    unplugin-vue-router: "npm:^0.15.0"
+    vite: "npm:^7.1.5"
+    vite-plugin-vue-layouts-next: "npm:^1.0.0"
+    vite-plugin-vuetify: "npm:^2.1.2"
+    vue: "npm:^3.5.21"
+    vue-router: "npm:^4.5.1"
+    vue-tsc: "npm:^3.0.7"
+    vuetify: "npm:^3.10.1"
+  languageName: unknown
+  linkType: soft
+
 "@fontsource/roboto@npm:5.2.7":
   version: 5.2.7
   resolution: "@fontsource/roboto@npm:5.2.7"
@@ -10104,41 +10175,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nest-app@workspace:packages/nest-app":
-  version: 0.0.0-use.local
-  resolution: "nest-app@workspace:packages/nest-app"
-  dependencies:
-    "@eslint/eslintrc": "npm:^3.2.0"
-    "@eslint/js": "npm:^9.18.0"
-    "@nestjs/cli": "npm:^11.0.0"
-    "@nestjs/common": "npm:^11.0.1"
-    "@nestjs/core": "npm:^11.0.1"
-    "@nestjs/platform-express": "npm:^11.0.1"
-    "@nestjs/schematics": "npm:^11.0.0"
-    "@nestjs/testing": "npm:^11.0.1"
-    "@types/express": "npm:^5.0.0"
-    "@types/jest": "npm:^30.0.0"
-    "@types/node": "npm:^22.10.7"
-    "@types/supertest": "npm:^6.0.2"
-    eslint: "npm:^9.18.0"
-    eslint-config-prettier: "npm:^10.0.1"
-    eslint-plugin-prettier: "npm:^5.2.2"
-    globals: "npm:^16.0.0"
-    jest: "npm:^30.0.0"
-    prettier: "npm:^3.4.2"
-    reflect-metadata: "npm:^0.2.2"
-    rxjs: "npm:^7.8.1"
-    source-map-support: "npm:^0.5.21"
-    supertest: "npm:^7.0.0"
-    ts-jest: "npm:^29.2.5"
-    ts-loader: "npm:^9.5.2"
-    ts-node: "npm:^10.9.2"
-    tsconfig-paths: "npm:^4.2.0"
-    typescript: "npm:^5.7.3"
-    typescript-eslint: "npm:^8.20.0"
-  languageName: unknown
-  linkType: soft
-
 "node-abort-controller@npm:^3.0.1":
   version: 3.1.1
   resolution: "node-abort-controller@npm:3.1.1"
@@ -13928,42 +13964,6 @@ __metadata:
   checksum: 10c0/5f6c9c10fd9b1664d71fab4e9fbbae6be93c7f75bb3a1d9d74399a88ab8649e99691223fd7cef4644376cac6e94fa2c086d802521b9a8e31c5af3e60f0f35624
   languageName: node
   linkType: hard
-
-"vue-app@workspace:packages/vue-app":
-  version: 0.0.0-use.local
-  resolution: "vue-app@workspace:packages/vue-app"
-  dependencies:
-    "@fontsource/roboto": "npm:5.2.7"
-    "@mdi/font": "npm:7.4.47"
-    "@tsconfig/node22": "npm:^22.0.0"
-    "@types/debug": "npm:^4"
-    "@types/node": "npm:^22.9.0"
-    "@vitejs/plugin-vue": "npm:^6.0.1"
-    "@vue/compiler-sfc": "npm:^3.5.22"
-    "@vue/tsconfig": "npm:^0.8.1"
-    debug: "npm:^4.4.3"
-    eslint: "npm:^9.35.0"
-    eslint-config-vuetify: "npm:^4.2.0"
-    npm-run-all2: "npm:^8.0.4"
-    pinia: "npm:^3.0.3"
-    pug: "npm:^3.0.3"
-    pug-plain-loader: "npm:^1.1.0"
-    sass-embedded: "npm:^1.92.1"
-    supports-color: "npm:^10.2.2"
-    typescript: "npm:~5.9.2"
-    unplugin-auto-import: "npm:^20.1.0"
-    unplugin-fonts: "npm:^1.4.0"
-    unplugin-vue-components: "npm:^29.0.0"
-    unplugin-vue-router: "npm:^0.15.0"
-    vite: "npm:^7.1.5"
-    vite-plugin-vue-layouts-next: "npm:^1.0.0"
-    vite-plugin-vuetify: "npm:^2.1.2"
-    vue: "npm:^3.5.21"
-    vue-router: "npm:^4.5.1"
-    vue-tsc: "npm:^3.0.7"
-    vuetify: "npm:^3.10.1"
-  languageName: unknown
-  linkType: soft
 
 "vue-eslint-parser@npm:^10.2.0":
   version: 10.2.0
