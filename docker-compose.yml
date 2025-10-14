@@ -1,0 +1,33 @@
+services:
+  nest-app:
+    build:
+      context: .
+    command:
+      - start:dev
+    environment:
+      WORKSPACE_NAME: nest-app
+    image: example-monoservice
+    ports:
+      - 3001:3000
+    volumes:
+      - .:/monorepo:rw
+      # - /monorepo/.yarn
+      # - nest-app_dist:/monorepo/packages/nest-app/dist:rw
+
+  vue-app:
+    build:
+      context: .
+    command:
+      - dev
+    environment:
+      WORKSPACE_NAME: vue-app
+    image: example-monoservice
+    ports:
+      - 3002:3000
+    volumes:
+      - .:/monorepo:rw
+      # - /monorepo/.yarn
+      # - vue-app_dist:/monorepo/packages/vue-app/dist:rw
+# volumes:
+#   nest-app_dist: null
+#   vue-app_dist: null
