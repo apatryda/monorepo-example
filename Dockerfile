@@ -2,12 +2,12 @@ FROM node:24-slim
 
 USER root:root
 
+RUN apt-get update && apt-get install -y procps && rm -rf /var/lib/apt/lists/*
 RUN npm uninstall -g yarn pnpm && npm install -g corepack
 RUN mkdir /monorepo && chown -R node:node /monorepo
 
 USER node:node
 WORKDIR /monorepo
-
 RUN corepack enable
 
 COPY --chown=node:node docker-entrypoint.sh docker-entrypoint.sh
