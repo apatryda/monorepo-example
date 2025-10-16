@@ -1,6 +1,6 @@
 import { Module, OnModuleInit } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DataSource } from 'typeorm';
+// import { DataSource } from 'typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { EmbeddingModule } from './embedding/embedding.module';
@@ -24,9 +24,7 @@ import { EmbeddingModule } from './embedding/embedding.module';
   providers: [AppService],
 })
 export class AppModule implements OnModuleInit {
-  constructor(private dataSource: DataSource) {
-
-  }
+  // constructor(private dataSource: DataSource) {}
 
   async onModuleInit() {
     /*
