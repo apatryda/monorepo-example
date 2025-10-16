@@ -1,4 +1,26 @@
 services:
+  keystone-app:
+    build:
+      context: nm-packages/keystone-app
+    command:
+      - yarn
+      - dev
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_PROVIDER: postgresql
+      DATABASE_URL: postgres://example:example@postgres:5432/keystone
+      DATABASE_ENABLE_LOGGING: "true"
+      VIRTUAL_HOST: keystone.local
+      VIRTUAL_PORT: "3003"
+    image: example-keystone-app
+    ports:
+      - 3003:3003
+    volumes:
+      - "./nm-packages/keystone-app:/keystone-app:rw"
+      - /keystone-app/.keystone
+      # - /keystone-app/.yarn
+
   nest-app:
     build:
       context: .
