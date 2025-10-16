@@ -1,10 +1,8 @@
 FROM node:24-slim
 
 USER root:root
-RUN \
-  npm uninstall -g yarn pnpm && \
-  npm install -g corepack
 
+RUN npm uninstall -g yarn pnpm && npm install -g corepack
 RUN mkdir /monorepo && chown -R node:node /monorepo
 
 USER node:node
