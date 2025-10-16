@@ -1,0 +1,24 @@
+{
+  "name": "@example/keystone-app",
+  "version": "1.0.3",
+  "private": true,
+  "scripts": {
+    "dev": "keystone dev",
+    "start": "keystone start",
+    "build": "keystone build",
+    "generatee": "keystone prisma migrate dev",
+    "postinstalle": "keystone postinstall"
+  },
+  "dependencies": {
+    "@keystone-6/auth": "^8.0.0",
+    "@keystone-6/core": "^6.0.0",
+    "@keystone-6/fields-document": "^9.0.0",
+    "@prisma/client": "^6.17.1",
+    "slate-dom": "^0.118.1",
+    "typescript": "^5.5.0"
+  },
+  "devDependencies": {
+    "dockerfile-check-updates": "^0.0.7",
+    "prisma": "^6.17.1"
+  }
+}
