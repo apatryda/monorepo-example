@@ -28,6 +28,15 @@ services:
       - .:/monorepo:rw
       # - /monorepo/.yarn
       # - vue-app_dist:/monorepo/packages/vue-app/dist:rw
+  postgres:
+    image: pgvector/pgvector:pg18
+    environment:
+      POSTGRES_USER: example
+      POSTGRES_PASSWORD: example
+    ports:
+      - 5433:5432
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
 # volumes:
 #   nest-app_dist: null
 #   vue-app_dist: null
