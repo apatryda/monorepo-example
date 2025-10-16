@@ -8,6 +8,10 @@
       "path": "nm-packages/keystone-app"
     },
     {
+      "name": "my-keystone-app",
+      "path": "nm-packages/my-keystone-app"
+    },
+    {
       "name": "nest-app",
       "path": "packages/nest-app"
     },
