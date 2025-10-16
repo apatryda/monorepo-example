@@ -4,6 +4,10 @@
       "path": "."
     },
     {
+      "name": "keystone-app",
+      "path": "nm-packages/keystone-app"
+    },
+    {
       "name": "nest-app",
       "path": "packages/nest-app"
     },
