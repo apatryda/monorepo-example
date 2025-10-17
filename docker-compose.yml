@@ -12,12 +12,33 @@ services:
       DATABASE_URL: postgres://example:example@postgres:5432/keystone
       DATABASE_ENABLE_LOGGING: "true"
       VIRTUAL_HOST: keystone.local
-      VIRTUAL_PORT: "3003"
+      VIRTUAL_PORT: "3000"
     image: example-keystone-app
     ports:
-      - 3003:3003
+      - 3003:3000
     volumes:
       - "./nm-packages/keystone-app:/keystone-app:rw"
+      - /keystone-app/.keystone
+      # - /keystone-app/.yarn
+  my-keystone-app:
+    build:
+      context: nm-packages/my-keystone-app
+    command:
+      - yarn
+      - dev
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_PROVIDER: postgresql
+      DATABASE_URL: postgres://example:example@postgres:5432/keystone
+      DATABASE_ENABLE_LOGGING: "true"
+      VIRTUAL_HOST: my-keystone.local
+      VIRTUAL_PORT: "3000"
+    image: example-my-keystone-app
+    ports:
+      - 3004:3000
+    volumes:
+      - "./nm-packages/my-keystone-app:/keystone-app:rw"
       - /keystone-app/.keystone
       # - /keystone-app/.yarn
 
