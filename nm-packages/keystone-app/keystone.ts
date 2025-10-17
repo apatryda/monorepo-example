@@ -20,15 +20,15 @@ export default withAuth(
       // we're using sqlite for the fastest startup experience
       //   for more information on what database might be appropriate for you
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
-      provider: "sqlite",
-      url: "file:./keystone.db",
-      // provider: 'postgresql',
-      // url:
-      //   process.env.DATABASE_URL ||
-      //   'postgres://postgres:password@localhost:5432/keystone',
+      // provider: "sqlite",
+      // url: "file:./keystone.db",
+      provider: "postgresql",
+      url:
+        process.env.DATABASE_URL ||
+        "postgres://postgres:password@localhost:5432/keystone",
       // Optional advanced configuration
-      // enableLogging: process.env.LOGGING !== "false",
-      // idField: { kind: "uuid" },
+      enableLogging: process.env.LOGGING !== "false",
+      idField: { kind: "uuid" },
     },
     lists,
     session,
