@@ -22,18 +22,15 @@ export default withAuth(
       //   see https://keystonejs.com/docs/guides/choosing-a-database#title
       provider: "sqlite",
       url: "file:./keystone.db",
-      // provider: "postgresql",
+      // provider: 'postgresql',
       // url:
       //   process.env.DATABASE_URL ||
-      //   "postgres://postgres:password@localhost:5432/keystone",
+      //   'postgres://postgres:password@localhost:5432/keystone',
       // Optional advanced configuration
-      enableLogging: process.env.LOGGING !== "false",
-      idField: { kind: "uuid" },
+      // enableLogging: process.env.LOGGING !== "false",
+      // idField: { kind: "uuid" },
     },
     lists,
-    server: {
-      port: process.env.PORT ? parseInt(process.env.PORT) : 3003,
-    },
     session,
   })
 );
