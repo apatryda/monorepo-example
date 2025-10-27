@@ -11,12 +11,16 @@
     "eslint": "^9.38.0",
     "husky": "^9.1.7",
     "lerna": "^9.0.0",
+    "npm-check-updates": "^19.1.1",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.10.3",
   "scripts": {
+    "check-updates": "ncu -p yarn -t minor -w -x eslint-plugin-prettier",
+    "check-updates:latest": "ncu -p yarn -t latest -w -x eslint-plugin-prettier",
     "prepare": "husky",
-    "test": "true"
+    "test": "true",
+    "upgrade": "ncu -p yarn -t minor -u -w -x eslint-plugin-prettier"
   }
 }
