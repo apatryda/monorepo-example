@@ -1,3 +1,8 @@
 extends:
   - "@commitlint/config-workspace-scopes"
   - "@commitlint/config-conventional"
+parserPreset:
+  parserOpts:
+    headerPattern: '^(\w*)(?:\((.*)\))?!?: (.*)$'
+    issuePrefixes:
+      - '#'
