@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": true,
+  "eslint.nodePath": "../../.yarn/sdks",
+  "eslint.useFlatConfig": true,
+  "jest.debugMode": true,
+  "jest.jestCommandLine": "yarn workspace @example/nest-app run jest",
+  "prettier.prettierPath": "../../.yarn/sdks/prettier/index.cjs",
+  "typescript.tsdk": "../../.yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
