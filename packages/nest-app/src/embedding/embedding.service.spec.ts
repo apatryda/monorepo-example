@@ -4,7 +4,7 @@ import { EmbeddingService } from './embedding.service';
 // import { Embedding } from './embedding.entity';
 
 describe('EmbeddingService', () => {
-  let service: EmbeddingService | undefined = undefined;
+  const service: EmbeddingService | undefined = undefined;
 
   // beforeEach(async () => {
   //   const module: TestingModule = await Test.createTestingModule({

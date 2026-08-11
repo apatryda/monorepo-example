@@ -1,4 +1,13 @@
-import { Controller, DefaultValuePipe, Get, ParseIntPipe, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  DefaultValuePipe,
+  Get,
+  Logger,
+  ParseIntPipe,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { EmbeddingService } from './embedding.service';
 
 @Controller('embedding')
@@ -11,6 +20,17 @@ export class EmbeddingController {
     @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number,
   ) {
     return this.embeddingService.findAllPaged(page, limit);
+  }
+
+  @Post()
+  async embedText(
+    @Body() body: { text: string },
+    @Query('limit', new DefaultValuePipe(10), ParseIntPipe)
+    limit: number,
+  ) {
+    const { embedding } = await this.embeddingService.embedText(body.text);
+    Logger.log(`Embedded text: ${body.text}`);
+    return this.embeddingService.findClosest(embedding, limit);
   }
 
   @Get('draw')
