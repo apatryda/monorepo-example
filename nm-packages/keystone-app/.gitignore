@@ -1,6 +1,6 @@
 node_modules
 .keystone/
+.yarn/cache/*.zip
+generated/
 keystone.db
 *.log
-
-.yarn/cache/*.zip
