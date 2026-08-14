@@ -4,8 +4,13 @@ services:
       context: .
     command:
       - start:dev
+    depends_on:
+      - postgres
     environment:
       WORKSPACE_NAME: nest-app
+      DATABASE_PROVIDER: postgresql
+      DATABASE_URL: postgres://example:example@postgres:5432/example_nest
+      DATABASE_ENABLE_LOGGING: "true"
     image: example-monoservice
     ports:
       - 3001:3000
