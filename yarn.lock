@@ -116,6 +116,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@asamuzakjp/css-color@npm:^5.0.1":
+  version: 5.1.11
+  resolution: "@asamuzakjp/css-color@npm:5.1.11"
+  dependencies:
+    "@asamuzakjp/generational-cache": "npm:^1.0.1"
+    "@csstools/css-calc": "npm:^3.2.0"
+    "@csstools/css-color-parser": "npm:^4.1.0"
+    "@csstools/css-parser-algorithms": "npm:^4.0.0"
+    "@csstools/css-tokenizer": "npm:^4.0.0"
+  checksum: 10/2e337cc94b5a3f9741a27f92b4e4b7dc467a76b1dcf66c40e71808fed71695f10c8cf07c8b13313cbb637154314ca1d8626bb9a045fe94b404b242a390cf3bd3
+  languageName: node
+  linkType: hard
+
 "@asamuzakjp/dom-selector@npm:^6.7.6":
   version: 6.8.1
   resolution: "@asamuzakjp/dom-selector@npm:6.8.1"
@@ -126,6 +139,13 @@ __metadata:
     is-potential-custom-element-name: "npm:^1.0.1"
     lru-cache: "npm:^11.2.6"
   checksum: 10/4d1c63bf094aa35c9c60ad8d2faf45ee4f5f8d1520fbb158e2552c456f8264029932ff4464ea18ea760a89b3075b4bf70e43b2086191d256f35eff46fde3eb24
+  languageName: node
+  linkType: hard
+
+"@asamuzakjp/generational-cache@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@asamuzakjp/generational-cache@npm:1.0.1"
+  checksum: 10/e1cf3f1916a334c6153f624982f0eb3d50fa3048435ea5c5b0f441f8f1ab74a0fe992dac214b612d22c0acafad3cd1a1f6b45d99c7b6e3b63cfdf7f6ca5fc144
   languageName: node
   linkType: hard
 
@@ -805,7 +825,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/css-calc@npm:^3.0.0, @csstools/css-calc@npm:^3.3.0":
+"@csstools/color-helpers@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "@csstools/color-helpers@npm:6.1.1"
+  checksum: 10/79d96c079a0e65cd718183914902e5e914517b07e685e92a7b0e4f4bc2feb3c222bd2b0e723b6ef520fd08de7eefd1e19c073de2a94f2e2c08e9f06da5ad89d4
+  languageName: node
+  linkType: hard
+
+"@csstools/css-calc@npm:^3.0.0, @csstools/css-calc@npm:^3.2.0, @csstools/css-calc@npm:^3.3.0":
   version: 3.3.0
   resolution: "@csstools/css-calc@npm:3.3.0"
   peerDependencies:
@@ -828,6 +855,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/css-color-parser@npm:^4.1.0":
+  version: 4.2.0
+  resolution: "@csstools/css-color-parser@npm:4.2.0"
+  dependencies:
+    "@csstools/color-helpers": "npm:^6.1.1"
+    "@csstools/css-calc": "npm:^3.3.0"
+  peerDependencies:
+    "@csstools/css-parser-algorithms": ^4.0.0
+    "@csstools/css-tokenizer": ^4.0.0
+  checksum: 10/f76aae69ed32c55989f3a2fe00953fffe9e511f761c6bad28c28dbec945733e2039b0967d74332b7e5cd4e85e90270faac96b23d0d57bf33d1a218498c745a7b
+  languageName: node
+  linkType: hard
+
 "@csstools/css-parser-algorithms@npm:^4.0.0":
   version: 4.0.0
   resolution: "@csstools/css-parser-algorithms@npm:4.0.0"
@@ -846,6 +886,18 @@ __metadata:
     css-tree:
       optional: true
   checksum: 10/ba372ab41c351509d47e77f58eb56112fe6fd42e104b70c9c9c797faf4fbb3e837a5df5c9d7e3464b04607ee42e91701e34f935aeec8abb94f24be67cfa1b707
+  languageName: node
+  linkType: hard
+
+"@csstools/css-syntax-patches-for-csstree@npm:^1.0.28":
+  version: 1.1.8
+  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.1.8"
+  peerDependencies:
+    css-tree: ^3.2.1
+  peerDependenciesMeta:
+    css-tree:
+      optional: true
+  checksum: 10/6c837c7a7c514f483dddf2fe5f55082bb88cf19a273f50172cde0a59b9f7a1f974766fe357276a66d984cac0d9aaedfcb66c3c56cd888c7e66b663f3c04d1732
   languageName: node
   linkType: hard
 
@@ -2073,6 +2125,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/pattern@npm:30.4.0":
+  version: 30.4.0
+  resolution: "@jest/pattern@npm:30.4.0"
+  dependencies:
+    "@types/node": "npm:*"
+    jest-regex-util: "npm:30.4.0"
+  checksum: 10/4fb1db0e586713708d2fcd79059315600978608483ef2d80e04a0a59b20b0d8de0d3f47cad950ff90bfb9ea3cb788709ee3d1eb225734e4dbf1c4b743c93d204
+  languageName: node
+  linkType: hard
+
 "@jest/reporters@npm:30.2.0":
   version: 30.2.0
   resolution: "@jest/reporters@npm:30.2.0"
@@ -2115,6 +2177,15 @@ __metadata:
   dependencies:
     "@sinclair/typebox": "npm:^0.34.0"
   checksum: 10/40df4db55d4aeed09d1c7e19caf23788309cea34490a1c5d584c913494195e698b9967e996afc27226cac6d76e7512fe73ae6b9584480695c60dd18a5459cdba
+  languageName: node
+  linkType: hard
+
+"@jest/schemas@npm:30.4.1":
+  version: 30.4.1
+  resolution: "@jest/schemas@npm:30.4.1"
+  dependencies:
+    "@sinclair/typebox": "npm:^0.34.0"
+  checksum: 10/86e62c8fd8fc77535085f1ede3a416430a3740f78b8f88ec7d0ee4516b22daf3326ffc1ade9d5f7839bbde923aaf1b5ac430a42ed4bb1a38edc3de5005a58f51
   languageName: node
   linkType: hard
 
@@ -2200,6 +2271,21 @@ __metadata:
     "@types/yargs": "npm:^17.0.33"
     chalk: "npm:^4.1.2"
   checksum: 10/f50fcaea56f873a51d19254ab16762f2ea8ca88e3e08da2e496af5da2b67c322915a4fcd0153803cc05063ffe87ebef2ab4330e0a1b06ab984a26c916cbfc26b
+  languageName: node
+  linkType: hard
+
+"@jest/types@npm:30.4.1":
+  version: 30.4.1
+  resolution: "@jest/types@npm:30.4.1"
+  dependencies:
+    "@jest/pattern": "npm:30.4.0"
+    "@jest/schemas": "npm:30.4.1"
+    "@types/istanbul-lib-coverage": "npm:^2.0.6"
+    "@types/istanbul-reports": "npm:^3.0.4"
+    "@types/node": "npm:*"
+    "@types/yargs": "npm:^17.0.33"
+    chalk: "npm:^4.1.2"
+  checksum: 10/cc0999508613487c6d0f55661cd342ebe7cfe579fa9917534b94310204358f03f94524f70f00b4fe3c6dd2ccd0fd44657615a1b9f420ab310d68b43964bff87c
   languageName: node
   linkType: hard
 
@@ -3607,7 +3693,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tensorflow/tfjs-converter@npm:4.22.0":
+"@tensorflow/tfjs-converter@npm:*, @tensorflow/tfjs-converter@npm:4.22.0":
   version: 4.22.0
   resolution: "@tensorflow/tfjs-converter@npm:4.22.0"
   peerDependencies:
@@ -3616,7 +3702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tensorflow/tfjs-core@npm:4.22.0":
+"@tensorflow/tfjs-core@npm:*, @tensorflow/tfjs-core@npm:4.22.0":
   version: 4.22.0
   resolution: "@tensorflow/tfjs-core@npm:4.22.0"
   dependencies:
@@ -6777,6 +6863,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cssstyle@npm:*":
+  version: 6.2.0
+  resolution: "cssstyle@npm:6.2.0"
+  dependencies:
+    "@asamuzakjp/css-color": "npm:^5.0.1"
+    "@csstools/css-syntax-patches-for-csstree": "npm:^1.0.28"
+    css-tree: "npm:^3.1.0"
+    lru-cache: "npm:^11.2.6"
+  checksum: 10/c54c08c07d66567f7edf2e4041f97dd3dff7a7a1f6166f8eefd9b972f9165b6eca1767f9224fb413d0cea5193238cd73ee97c519e45d87571ea567e1423155a5
+  languageName: node
+  linkType: hard
+
 "cssstyle@npm:^5.3.4":
   version: 5.3.7
   resolution: "cssstyle@npm:5.3.7"
@@ -9885,6 +9983,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-regex-util@npm:30.4.0":
+  version: 30.4.0
+  resolution: "jest-regex-util@npm:30.4.0"
+  checksum: 10/8664fcc1d07c8236a3bd012c0f06ae9d14d96e758b32ee340a3a7c4c326d0b5052d8c4ae4f4c4184f08bf78723d905352f22923647df9658ace3604f03bf074f
+  languageName: node
+  linkType: hard
+
 "jest-resolve-dependencies@npm:30.2.0":
   version: 30.2.0
   resolution: "jest-resolve-dependencies@npm:30.2.0"
@@ -9997,6 +10102,20 @@ __metadata:
     semver: "npm:^7.7.2"
     synckit: "npm:^0.11.8"
   checksum: 10/119390b49f397ed622ba7c375fc15f97af67c4fc49a34cf829c86ee732be2b06ad3c7171c76bb842a0e84a234783f1a4c721909aa316fbe00c6abc7c5962dfbc
+  languageName: node
+  linkType: hard
+
+"jest-util@npm:*":
+  version: 30.4.1
+  resolution: "jest-util@npm:30.4.1"
+  dependencies:
+    "@jest/types": "npm:30.4.1"
+    "@types/node": "npm:*"
+    chalk: "npm:^4.1.2"
+    ci-info: "npm:^4.2.0"
+    graceful-fs: "npm:^4.2.11"
+    picomatch: "npm:^4.0.3"
+  checksum: 10/603093e12076906afcf28be514d5b7ac4e3c0e26997b0047614cf2a308b65d773137304a1fb011d747517e881aeed067f6606b9937f5b838d67f6e5734b49ebe
   languageName: node
   linkType: hard
 
@@ -10750,6 +10869,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"long@npm:*":
+  version: 5.3.2
+  resolution: "long@npm:5.3.2"
+  checksum: 10/b6b55ddae56fcce2864d37119d6b02fe28f6dd6d9e44fd22705f86a9254b9321bd69e9ffe35263b4846d54aba197c64882adcb8c543f2383c1e41284b321ea64
+  languageName: node
+  linkType: hard
+
 "long@npm:4.0.0":
   version: 4.0.0
   resolution: "long@npm:4.0.0"
@@ -11334,7 +11460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ms@npm:^2.1.1, ms@npm:^2.1.3":
+"ms@npm:*, ms@npm:^2.1.1, ms@npm:^2.1.3":
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: 10/aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d

@@ -54,11 +54,15 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "@asamuzakjp/css-color",\
-      "npm:4.1.2"\
+      "npm:5.1.11"\
     ],\
     [\
       "@asamuzakjp/dom-selector",\
       "npm:6.8.1"\
+    ],\
+    [\
+      "@asamuzakjp/generational-cache",\
+      "npm:1.0.1"\
     ],\
     [\
       "@asamuzakjp/nwsapi",\
@@ -302,23 +306,23 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "@csstools/color-helpers",\
-      "npm:6.1.0"\
+      "npm:6.1.1"\
     ],\
     [\
       "@csstools/css-calc",\
-      "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:3.3.0"\
+      "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0"\
     ],\
     [\
       "@csstools/css-color-parser",\
-      "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.1.10"\
+      "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.2.0"\
     ],\
     [\
       "@csstools/css-parser-algorithms",\
-      "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.0.0"\
+      "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"\
     ],\
     [\
       "@csstools/css-syntax-patches-for-csstree",\
-      "virtual:ffdbe1b5e74a0db690c40d20066a0e807848859dc8cb0de56a9a6ed18b3481835b4e4d129a6f875e7cf93a2141e5c5f9960fc2657b152fa0a13e82c13c518091#npm:1.1.7"\
+      "virtual:4e507e65421d0fec2e2f067e62abca5a87634e2f4fa615223f921d6135ff1b161be423d3597db1537392b7871e82be8729cf1ceb8c82c33b1f13ab692024602a#npm:1.1.8"\
     ],\
     [\
       "@csstools/css-tokenizer",\
@@ -1334,7 +1338,7 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "@types/offscreencanvas",\
-      "npm:2019.3.0"\
+      "npm:2019.7.3"\
     ],\
     [\
       "@types/pg",\
@@ -2282,7 +2286,7 @@ const RAW_RUNTIME_STATE =
     ],\
     [\
       "cssstyle",\
-      "npm:5.3.7"\
+      "npm:6.2.0"\
     ],\
     [\
       "csstype",\
@@ -5225,7 +5229,8 @@ const RAW_RUNTIME_STATE =
       ["npm:0.9.31", {\
         "packageLocation": "./.yarn/cache/@acemir-cssom-npm-0.9.31-806e8cd7a7-5948336f7f.zip/node_modules/@acemir/cssom/",\
         "packageDependencies": [\
-          ["@acemir/cssom", "npm:0.9.31"]\
+          ["@acemir/cssom", "npm:0.9.31"],\
+          ["cssstyle", "npm:6.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5370,11 +5375,23 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@asamuzakjp-css-color-npm-4.1.2-585025f523-0938a4598a.zip/node_modules/@asamuzakjp/css-color/",\
         "packageDependencies": [\
           ["@asamuzakjp/css-color", "npm:4.1.2"],\
-          ["@csstools/css-calc", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:3.3.0"],\
+          ["@csstools/css-calc", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0"],\
           ["@csstools/css-color-parser", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.1.10"],\
-          ["@csstools/css-parser-algorithms", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.0.0"],\
+          ["@csstools/css-parser-algorithms", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"],\
           ["@csstools/css-tokenizer", "npm:4.0.0"],\
           ["lru-cache", "npm:11.5.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.1.11", {\
+        "packageLocation": "./.yarn/cache/@asamuzakjp-css-color-npm-5.1.11-3a7e65c45e-2e337cc94b.zip/node_modules/@asamuzakjp/css-color/",\
+        "packageDependencies": [\
+          ["@asamuzakjp/css-color", "npm:5.1.11"],\
+          ["@asamuzakjp/generational-cache", "npm:1.0.1"],\
+          ["@csstools/css-calc", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0"],\
+          ["@csstools/css-color-parser", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.2.0"],\
+          ["@csstools/css-parser-algorithms", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"],\
+          ["@csstools/css-tokenizer", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5389,6 +5406,15 @@ const RAW_RUNTIME_STATE =
           ["css-tree", "npm:3.2.1"],\
           ["is-potential-custom-element-name", "npm:1.0.1"],\
           ["lru-cache", "npm:11.5.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@asamuzakjp/generational-cache", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "./.yarn/cache/@asamuzakjp-generational-cache-npm-1.0.1-3432a81028-e1cf3f1916.zip/node_modules/@asamuzakjp/generational-cache/",\
+        "packageDependencies": [\
+          ["@asamuzakjp/generational-cache", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6543,6 +6569,13 @@ const RAW_RUNTIME_STATE =
           ["@csstools/color-helpers", "npm:6.1.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:6.1.1", {\
+        "packageLocation": "./.yarn/cache/@csstools-color-helpers-npm-6.1.1-439a63bcd5-79d96c079a.zip/node_modules/@csstools/color-helpers/",\
+        "packageDependencies": [\
+          ["@csstools/color-helpers", "npm:6.1.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@csstools/css-calc", [\
@@ -6553,11 +6586,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:3.3.0", {\
-        "packageLocation": "./.yarn/__virtual__/@csstools-css-calc-virtual-4fcc106788/0/cache/@csstools-css-calc-npm-3.3.0-9ee2f40666-46dde1c26c.zip/node_modules/@csstools/css-calc/",\
+      ["virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0", {\
+        "packageLocation": "./.yarn/__virtual__/@csstools-css-calc-virtual-94a7b9fd0d/0/cache/@csstools-css-calc-npm-3.3.0-9ee2f40666-46dde1c26c.zip/node_modules/@csstools/css-calc/",\
         "packageDependencies": [\
-          ["@csstools/css-calc", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:3.3.0"],\
-          ["@csstools/css-parser-algorithms", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.0.0"],\
+          ["@csstools/css-calc", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0"],\
+          ["@csstools/css-parser-algorithms", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"],\
           ["@csstools/css-tokenizer", "npm:4.0.0"],\
           ["@types/csstools__css-parser-algorithms", null],\
           ["@types/csstools__css-tokenizer", null]\
@@ -6579,13 +6612,39 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["npm:4.2.0", {\
+        "packageLocation": "./.yarn/cache/@csstools-css-color-parser-npm-4.2.0-97b562c4a1-f76aae69ed.zip/node_modules/@csstools/css-color-parser/",\
+        "packageDependencies": [\
+          ["@csstools/css-color-parser", "npm:4.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/@csstools-css-color-parser-virtual-f1a8046996/0/cache/@csstools-css-color-parser-npm-4.2.0-97b562c4a1-f76aae69ed.zip/node_modules/@csstools/css-color-parser/",\
+        "packageDependencies": [\
+          ["@csstools/color-helpers", "npm:6.1.1"],\
+          ["@csstools/css-calc", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0"],\
+          ["@csstools/css-color-parser", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.2.0"],\
+          ["@csstools/css-parser-algorithms", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"],\
+          ["@csstools/css-tokenizer", "npm:4.0.0"],\
+          ["@types/csstools__css-parser-algorithms", null],\
+          ["@types/csstools__css-tokenizer", null]\
+        ],\
+        "packagePeers": [\
+          "@csstools/css-parser-algorithms",\
+          "@csstools/css-tokenizer",\
+          "@types/csstools__css-parser-algorithms",\
+          "@types/csstools__css-tokenizer"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.1.10", {\
         "packageLocation": "./.yarn/__virtual__/@csstools-css-color-parser-virtual-628430bd77/0/cache/@csstools-css-color-parser-npm-4.1.10-c699668c70-92f5f59061.zip/node_modules/@csstools/css-color-parser/",\
         "packageDependencies": [\
           ["@csstools/color-helpers", "npm:6.1.0"],\
-          ["@csstools/css-calc", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:3.3.0"],\
+          ["@csstools/css-calc", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:3.3.0"],\
           ["@csstools/css-color-parser", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.1.10"],\
-          ["@csstools/css-parser-algorithms", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.0.0"],\
+          ["@csstools/css-parser-algorithms", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"],\
           ["@csstools/css-tokenizer", "npm:4.0.0"],\
           ["@types/csstools__css-parser-algorithms", null],\
           ["@types/csstools__css-tokenizer", null]\
@@ -6607,10 +6666,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/@csstools-css-parser-algorithms-virtual-eab76b1e62/0/cache/@csstools-css-parser-algorithms-npm-4.0.0-31b0851d2f-000f3ba55f.zip/node_modules/@csstools/css-parser-algorithms/",\
+      ["virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/@csstools-css-parser-algorithms-virtual-c0d3aeb3b6/0/cache/@csstools-css-parser-algorithms-npm-4.0.0-31b0851d2f-000f3ba55f.zip/node_modules/@csstools/css-parser-algorithms/",\
         "packageDependencies": [\
-          ["@csstools/css-parser-algorithms", "virtual:585025f5234635279c140770b16cae92486a7722575202863ffe85b75e300ebef38d63f0a81c6857e2d75a35b9af27d22074f5ed6b0d56b27f5d2914bd909b74#npm:4.0.0"],\
+          ["@csstools/css-parser-algorithms", "virtual:3a7e65c45e765eefb0aa1ac36390ad32774f58f795041e28b303b28e73bd22bce84d23b5e4c00a22c0750e8cbd7e35a934b1bc8c3699dd57f3abca69ec2677c8#npm:4.0.0"],\
           ["@csstools/css-tokenizer", "npm:4.0.0"],\
           ["@types/csstools__css-tokenizer", null]\
         ],\
@@ -6628,6 +6687,26 @@ const RAW_RUNTIME_STATE =
           ["@csstools/css-syntax-patches-for-csstree", "npm:1.1.7"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["npm:1.1.8", {\
+        "packageLocation": "./.yarn/cache/@csstools-css-syntax-patches-for-csstree-npm-1.1.8-1edf4b81b5-6c837c7a7c.zip/node_modules/@csstools/css-syntax-patches-for-csstree/",\
+        "packageDependencies": [\
+          ["@csstools/css-syntax-patches-for-csstree", "npm:1.1.8"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4e507e65421d0fec2e2f067e62abca5a87634e2f4fa615223f921d6135ff1b161be423d3597db1537392b7871e82be8729cf1ceb8c82c33b1f13ab692024602a#npm:1.1.8", {\
+        "packageLocation": "./.yarn/__virtual__/@csstools-css-syntax-patches-for-csstree-virtual-1aa7e1c65c/0/cache/@csstools-css-syntax-patches-for-csstree-npm-1.1.8-1edf4b81b5-6c837c7a7c.zip/node_modules/@csstools/css-syntax-patches-for-csstree/",\
+        "packageDependencies": [\
+          ["@csstools/css-syntax-patches-for-csstree", "virtual:4e507e65421d0fec2e2f067e62abca5a87634e2f4fa615223f921d6135ff1b161be423d3597db1537392b7871e82be8729cf1ceb8c82c33b1f13ab692024602a#npm:1.1.8"],\
+          ["@types/css-tree", null],\
+          ["css-tree", "npm:3.2.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/css-tree",\
+          "css-tree"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:ffdbe1b5e74a0db690c40d20066a0e807848859dc8cb0de56a9a6ed18b3481835b4e4d129a6f875e7cf93a2141e5c5f9960fc2657b152fa0a13e82c13c518091#npm:1.1.7", {\
         "packageLocation": "./.yarn/__virtual__/@csstools-css-syntax-patches-for-csstree-virtual-ed189dfbea/0/cache/@csstools-css-syntax-patches-for-csstree-npm-1.1.7-418d6f7d8c-ba372ab41c.zip/node_modules/@csstools/css-syntax-patches-for-csstree/",\
@@ -8202,6 +8281,15 @@ const RAW_RUNTIME_STATE =
           ["jest-regex-util", "npm:30.0.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:30.4.0", {\
+        "packageLocation": "./.yarn/cache/@jest-pattern-npm-30.4.0-ae6720c39b-4fb1db0e58.zip/node_modules/@jest/pattern/",\
+        "packageDependencies": [\
+          ["@jest/pattern", "npm:30.4.0"],\
+          ["@types/node", "npm:24.7.2"],\
+          ["jest-regex-util", "npm:30.4.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@jest/reporters", [\
@@ -8254,6 +8342,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@jest-schemas-npm-30.0.5-e55a4c770e-40df4db55d.zip/node_modules/@jest/schemas/",\
         "packageDependencies": [\
           ["@jest/schemas", "npm:30.0.5"],\
+          ["@sinclair/typebox", "npm:0.34.41"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:30.4.1", {\
+        "packageLocation": "./.yarn/cache/@jest-schemas-npm-30.4.1-342288f950-86e62c8fd8.zip/node_modules/@jest/schemas/",\
+        "packageDependencies": [\
+          ["@jest/schemas", "npm:30.4.1"],\
           ["@sinclair/typebox", "npm:0.34.41"]\
         ],\
         "linkType": "HARD"\
@@ -8341,6 +8437,20 @@ const RAW_RUNTIME_STATE =
           ["@jest/pattern", "npm:30.0.1"],\
           ["@jest/schemas", "npm:30.0.5"],\
           ["@jest/types", "npm:30.2.0"],\
+          ["@types/istanbul-lib-coverage", "npm:2.0.6"],\
+          ["@types/istanbul-reports", "npm:3.0.4"],\
+          ["@types/node", "npm:24.7.2"],\
+          ["@types/yargs", "npm:17.0.33"],\
+          ["chalk", "npm:4.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:30.4.1", {\
+        "packageLocation": "./.yarn/cache/@jest-types-npm-30.4.1-8d2a55aa17-cc09995086.zip/node_modules/@jest/types/",\
+        "packageDependencies": [\
+          ["@jest/pattern", "npm:30.4.0"],\
+          ["@jest/schemas", "npm:30.4.1"],\
+          ["@jest/types", "npm:30.4.1"],\
           ["@types/istanbul-lib-coverage", "npm:2.0.6"],\
           ["@types/istanbul-reports", "npm:3.0.4"],\
           ["@types/node", "npm:24.7.2"],\
@@ -10041,14 +10151,12 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@tensorflow-models-universal-sentence-encoder-virtual-e1b5ea8b51/0/cache/@tensorflow-models-universal-sentence-encoder-npm-1.3.3-c666b0ffc5-f162051c63.zip/node_modules/@tensorflow-models/universal-sentence-encoder/",\
         "packageDependencies": [\
           ["@tensorflow-models/universal-sentence-encoder", "virtual:2406eefe833cb4e207155c39272c2f832583a57a7bec306c514c0c4364eae1259a4327a253b6bbbcd7b7765a8e2c6520ea87fd664953f84a13b773a3426a9b3d#npm:1.3.3"],\
-          ["@tensorflow/tfjs-converter", null],\
-          ["@tensorflow/tfjs-core", null],\
+          ["@tensorflow/tfjs-converter", "virtual:6f358c0f355f9ee01882378b2d54915463d4bbc3bdbb41c21c853df8dbf9e9bbc821bcbd07b1a406b0d8071a1fadda02a5bcaab3b53cf7b5d5650c3d7f177eb6#npm:4.22.0"],\
+          ["@tensorflow/tfjs-core", "npm:4.22.0"],\
           ["@types/tensorflow__tfjs-converter", null],\
           ["@types/tensorflow__tfjs-core", null]\
         ],\
         "packagePeers": [\
-          "@tensorflow/tfjs-converter",\
-          "@tensorflow/tfjs-core",\
           "@types/tensorflow__tfjs-converter",\
           "@types/tensorflow__tfjs-core"\
         ],\
@@ -10069,6 +10177,7 @@ const RAW_RUNTIME_STATE =
           ["argparse", "npm:1.0.10"],\
           ["chalk", "npm:4.1.2"],\
           ["core-js", "npm:3.29.1"],\
+          ["long", "npm:5.3.2"],\
           ["regenerator-runtime", "npm:0.13.11"],\
           ["yargs", "npm:16.2.0"]\
         ],\
@@ -10220,6 +10329,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@mapbox/node-pre-gyp", "npm:1.0.9"],\
           ["@tensorflow/tfjs", "npm:4.22.0"],\
+          ["@tensorflow/tfjs-core", "npm:4.22.0"],\
           ["@tensorflow/tfjs-node", "npm:4.22.0"],\
           ["adm-zip", "npm:0.5.16"],\
           ["google-protobuf", "npm:3.21.4"],\
@@ -10720,6 +10830,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/node", "npm:24.7.2"],\
           ["@types/pg", "npm:8.15.5"],\
+          ["events", "npm:3.3.0"],\
           ["pg-protocol", "npm:1.10.3"],\
           ["pg-types", "npm:2.2.0"]\
         ],\
@@ -14234,6 +14345,17 @@ const RAW_RUNTIME_STATE =
           ["@csstools/css-syntax-patches-for-csstree", "virtual:ffdbe1b5e74a0db690c40d20066a0e807848859dc8cb0de56a9a6ed18b3481835b4e4d129a6f875e7cf93a2141e5c5f9960fc2657b152fa0a13e82c13c518091#npm:1.1.7"],\
           ["css-tree", "npm:3.2.1"],\
           ["cssstyle", "npm:5.3.7"],\
+          ["lru-cache", "npm:11.5.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.2.0", {\
+        "packageLocation": "./.yarn/cache/cssstyle-npm-6.2.0-4e507e6542-c54c08c07d.zip/node_modules/cssstyle/",\
+        "packageDependencies": [\
+          ["@asamuzakjp/css-color", "npm:5.1.11"],\
+          ["@csstools/css-syntax-patches-for-csstree", "virtual:4e507e65421d0fec2e2f067e62abca5a87634e2f4fa615223f921d6135ff1b161be423d3597db1537392b7871e82be8729cf1ceb8c82c33b1f13ab692024602a#npm:1.1.8"],\
+          ["css-tree", "npm:3.2.1"],\
+          ["cssstyle", "npm:6.2.0"],\
           ["lru-cache", "npm:11.5.2"]\
         ],\
         "linkType": "HARD"\
@@ -17956,6 +18078,13 @@ const RAW_RUNTIME_STATE =
           ["jest-regex-util", "npm:30.0.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:30.4.0", {\
+        "packageLocation": "./.yarn/cache/jest-regex-util-npm-30.4.0-e700656c40-8664fcc1d0.zip/node_modules/jest-regex-util/",\
+        "packageDependencies": [\
+          ["jest-regex-util", "npm:30.4.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["jest-resolve", [\
@@ -18088,6 +18217,19 @@ const RAW_RUNTIME_STATE =
           ["ci-info", "npm:4.3.1"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["jest-util", "npm:30.2.0"],\
+          ["picomatch", "npm:4.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:30.4.1", {\
+        "packageLocation": "./.yarn/cache/jest-util-npm-30.4.1-9ea66abb21-603093e120.zip/node_modules/jest-util/",\
+        "packageDependencies": [\
+          ["@jest/types", "npm:30.4.1"],\
+          ["@types/node", "npm:24.7.2"],\
+          ["chalk", "npm:4.1.2"],\
+          ["ci-info", "npm:4.3.1"],\
+          ["graceful-fs", "npm:4.2.11"],\
+          ["jest-util", "npm:30.4.1"],\
           ["picomatch", "npm:4.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -18887,6 +19029,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/long-npm-4.0.0-ecd96a31ed-8296e2ba7b.zip/node_modules/long/",\
         "packageDependencies": [\
           ["long", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.3.2", {\
+        "packageLocation": "./.yarn/cache/long-npm-5.3.2-f80d0f7d39-b6b55ddae5.zip/node_modules/long/",\
+        "packageDependencies": [\
+          ["long", "npm:5.3.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -23412,7 +23561,7 @@ const RAW_RUNTIME_STATE =
           ["fast-json-stable-stringify", "npm:2.1.0"],\
           ["handlebars", "npm:4.7.8"],\
           ["jest", "virtual:2406eefe833cb4e207155c39272c2f832583a57a7bec306c514c0c4364eae1259a4327a253b6bbbcd7b7765a8e2c6520ea87fd664953f84a13b773a3426a9b3d#npm:30.2.0"],\
-          ["jest-util", null],\
+          ["jest-util", "npm:30.4.1"],\
           ["json5", "npm:2.2.3"],\
           ["lodash.memoize", "npm:4.1.2"],\
           ["make-error", "npm:1.3.6"],\
@@ -23436,7 +23585,6 @@ const RAW_RUNTIME_STATE =
           "@types/typescript",\
           "babel-jest",\
           "esbuild",\
-          "jest-util",\
           "jest",\
           "typescript"\
         ],\
@@ -23719,6 +23867,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["dedent", "virtual:95f1898763bef97bef6e0fb0099fa5acb6423b60c0501ddf209534c2acbba44ee5718a277be8684eb0a72adb6c7daffd478f50f408361dd6c679f2d73dcdfc5d#npm:1.7.0"],\
           ["dotenv", "npm:16.6.1"],\
+          ["events", "npm:3.3.0"],\
           ["glob", "npm:10.4.5"],\
           ["ioredis", null],\
           ["mongodb", null],\
@@ -24344,6 +24493,7 @@ const RAW_RUNTIME_STATE =
           ["jiti", null],\
           ["less", null],\
           ["lightningcss", null],\
+          ["ms", "npm:2.1.3"],\
           ["picomatch", "npm:4.0.3"],\
           ["postcss", "npm:8.5.6"],\
           ["rollup", "npm:4.52.4"],\
@@ -24406,6 +24556,7 @@ const RAW_RUNTIME_STATE =
           ["jiti", null],\
           ["less", null],\
           ["lightningcss", null],\
+          ["ms", "npm:2.1.3"],\
           ["picomatch", "npm:4.0.3"],\
           ["postcss", "npm:8.5.6"],\
           ["rollup", "npm:4.52.4"],\
@@ -24468,6 +24619,7 @@ const RAW_RUNTIME_STATE =
           ["jiti", null],\
           ["less", null],\
           ["lightningcss", null],\
+          ["ms", "npm:2.1.3"],\
           ["picomatch", "npm:4.0.3"],\
           ["postcss", "npm:8.5.6"],\
           ["rollup", "npm:4.52.4"],\
