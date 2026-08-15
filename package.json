@@ -22,5 +22,10 @@
     "prepare": "husky",
     "test": "true",
     "upgrade": "ncu -p yarn -t minor -u -w -x eslint-plugin-prettier"
+  },
+  "dependenciesMeta": {
+    "vuetify@3.10.5": {
+      "unplugged": true
+    }
   }
 }
