@@ -39,13 +39,18 @@ export class EmbeddingService {
     const embeddingArray = await embeddings.array();
     const [textEmbedding] = embeddingArray;
 
-    const embedding = new Embedding();
-    embedding.embedding = textEmbedding;
-    embedding.embedding_3d = textEmbedding.slice(0, 3);
-    embedding.halfvec_embedding = textEmbedding.slice(0, 4);
-    embedding.text = text;
+    let embedding = await this.embeddingRepository.findOneBy({ text });
 
-    return this.embeddingRepository.save(embedding);
+    if (!embedding) {
+      embedding = new Embedding();
+      embedding.embedding = textEmbedding;
+      embedding.embedding_3d = textEmbedding.slice(0, 3);
+      embedding.halfvec_embedding = textEmbedding.slice(0, 4);
+      embedding.text = text;
+      embedding = await this.embeddingRepository.save(embedding);
+    }
+
+    return embedding;
   }
 
   async findAllPaged(pageNo = 0, pageSize = 10) {
