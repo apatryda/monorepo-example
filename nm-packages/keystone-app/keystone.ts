@@ -26,6 +26,13 @@ export default withAuth(
             'postgres://postgres:password@localhost:5432/keystone',
         }),
       }),
+      // Keystone has no built-in vector field, so the Embedding list falls back to raw
+      // `Unsupported(...)` columns (see schema.ts) - those require the `pgvector` extension
+      // and the `postgresqlExtensions` preview feature to be pushed by Prisma.
+      extendPrismaSchema: (schema: string) =>
+        schema
+          .replace(/(generator client[^}]+)}/, '$1  previewFeatures = ["postgresqlExtensions"]\n}')
+          .replace(/(datasource postgresql[^}]+)}/, '$1  extensions = [vector]\n}'),
       async onConnect(context) {
         // this creates an initial user if none exist so you can log in for development
         // WARNING: do not use this in production

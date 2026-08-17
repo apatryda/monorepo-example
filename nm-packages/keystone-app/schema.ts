@@ -117,6 +117,33 @@ export const lists = {
     },
   }),
 
+  // mirrors nest-app's Embedding entity (src/embedding/embedding.entity.ts)
+  Embedding: list({
+    access: allowAll,
+
+    fields: {
+      text: text(),
+    },
+
+    db: {
+      // Keystone/Prisma have no field type for pgvector's `vector`/`halfvec` columns, so they're
+      // appended as raw `Unsupported(...)` columns - see https://keystonejs.com/docs/config/config#extendprismaschema
+      // and https://www.prisma.io/docs/orm/prisma-schema/data-model/models#unsupported-types
+      //   WARNING: `Unsupported` fields don't appear in the generated Prisma Client, so they're
+      //   invisible to Keystone's Admin UI and GraphQL API - reading/writing them requires raw SQL.
+      //   They're nullable (unlike nest-app's columns) because Keystone has no way to populate
+      //   them on create, so a NOT NULL column would make createEmbedding() fail unconditionally.
+      extendPrismaSchema: (schema: string) =>
+        schema.slice(0, -1) +
+        [
+          '  embedding         Unsupported("vector")?',
+          '  embedding_3d      Unsupported("vector(3)")?',
+          '  halfvec_embedding Unsupported("halfvec(4)")?',
+          '}',
+        ].join('\n'),
+    },
+  }),
+
   // this last list is our Tag list, it only has a name field for now
   Tag: list({
     // WARNING

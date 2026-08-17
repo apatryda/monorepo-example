@@ -222,6 +222,41 @@ input TagRelateToManyForCreateInput {
   set: [TagWhereUniqueInput!]
 }
 
+type Embedding {
+  id: ID!
+  text: String
+}
+
+input EmbeddingWhereUniqueInput {
+  id: ID
+}
+
+input EmbeddingWhereInput {
+  AND: [EmbeddingWhereInput!]
+  OR: [EmbeddingWhereInput!]
+  NOT: [EmbeddingWhereInput!]
+  id: IDFilter
+  text: StringFilter
+}
+
+input EmbeddingOrderByInput {
+  id: OrderDirection
+  text: OrderDirection
+}
+
+input EmbeddingUpdateInput {
+  text: String
+}
+
+input EmbeddingUpdateArgs {
+  where: EmbeddingWhereUniqueInput!
+  data: EmbeddingUpdateInput!
+}
+
+input EmbeddingCreateInput {
+  text: String
+}
+
 type Tag {
   id: ID!
   name: String
@@ -280,6 +315,12 @@ type Mutation {
   updatePosts(data: [PostUpdateArgs!]!): [Post]
   deletePost(where: PostWhereUniqueInput!): Post
   deletePosts(where: [PostWhereUniqueInput!]!): [Post]
+  createEmbedding(data: EmbeddingCreateInput!): Embedding
+  createEmbeddings(data: [EmbeddingCreateInput!]!): [Embedding]
+  updateEmbedding(where: EmbeddingWhereUniqueInput!, data: EmbeddingUpdateInput!): Embedding
+  updateEmbeddings(data: [EmbeddingUpdateArgs!]!): [Embedding]
+  deleteEmbedding(where: EmbeddingWhereUniqueInput!): Embedding
+  deleteEmbeddings(where: [EmbeddingWhereUniqueInput!]!): [Embedding]
   createTag(data: TagCreateInput!): Tag
   createTags(data: [TagCreateInput!]!): [Tag]
   updateTag(where: TagWhereUniqueInput!, data: TagUpdateInput!): Tag
@@ -308,6 +349,9 @@ type Query {
   post(where: PostWhereUniqueInput!): Post
   posts(where: PostWhereInput! = {}, orderBy: [PostOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: PostWhereUniqueInput): [Post!]
   postsCount(where: PostWhereInput! = {}): Int
+  embedding(where: EmbeddingWhereUniqueInput!): Embedding
+  embeddings(where: EmbeddingWhereInput! = {}, orderBy: [EmbeddingOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: EmbeddingWhereUniqueInput): [Embedding!]
+  embeddingsCount(where: EmbeddingWhereInput! = {}): Int
   tag(where: TagWhereUniqueInput!): Tag
   tags(where: TagWhereInput! = {}, orderBy: [TagOrderByInput!]! = [], take: Int, skip: Int! = 0, cursor: TagWhereUniqueInput): [Tag!]
   tagsCount(where: TagWhereInput! = {}): Int

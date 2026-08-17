@@ -2,12 +2,14 @@
 // Modify your Keystone config when you want to change this.
 
 datasource postgresql {
-  provider = "postgresql"
+  provider   = "postgresql"
+  extensions = [vector]
 }
 
 generator client {
-  provider = "prisma-client"
-  output   = "./generated/prisma"
+  provider        = "prisma-client"
+  output          = "./generated/prisma"
+  previewFeatures = ["postgresqlExtensions"]
 }
 
 model User {
@@ -28,6 +30,14 @@ model Post {
   tags     Tag[]   @relation("Post_tags")
 
   @@index([authorId])
+}
+
+model Embedding {
+  id                String                     @id @default(cuid())
+  text              String                     @default("")
+  embedding         Unsupported("vector")?
+  embedding_3d      Unsupported("vector(3)")?
+  halfvec_embedding Unsupported("halfvec(4)")?
 }
 
 model Tag {
