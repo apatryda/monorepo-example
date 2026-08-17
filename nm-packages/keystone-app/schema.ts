@@ -10,7 +10,7 @@ import { allowAll } from '@keystone-6/core/access'
 
 // see https://keystonejs.com/docs/fields/overview for the full list of fields
 //   this is a few common fields for an example
-import { text, relationship, password, timestamp, select } from '@keystone-6/core/fields'
+import { text, relationship, password, timestamp } from '@keystone-6/core/fields'
 
 // the document field is a more complicated field, so it has it's own package
 import { document } from '@keystone-6/fields-document'
@@ -86,12 +86,12 @@ export const lists = {
         ref: 'User.posts',
 
         // this is some customisations for changing how this will look in the AdminUI
+        //   the installed @keystone-6/core version dropped the old 'cards' displayMode
+        //   (with cardFields/inlineEdit/inlineConnect), so 'select' with searchFields is
+        //   the closest replacement for a single relationship
         ui: {
-          displayMode: 'cards',
-          cardFields: ['name', 'email'],
-          inlineEdit: { fields: ['name', 'email'] },
-          linkToItem: true,
-          inlineConnect: true,
+          displayMode: 'select',
+          searchFields: ['name', 'email'],
         },
 
         // a Post can only have one author
@@ -108,13 +108,10 @@ export const lists = {
         many: true,
 
         // this is some customisations for changing how this will look in the AdminUI
+        //   see the note on the author field above re: the removed 'cards' displayMode
         ui: {
-          displayMode: 'cards',
-          cardFields: ['name'],
-          inlineEdit: { fields: ['name'] },
-          linkToItem: true,
-          inlineConnect: true,
-          inlineCreate: { fields: ['name'] },
+          displayMode: 'select',
+          labelField: 'name',
         },
       }),
     },
