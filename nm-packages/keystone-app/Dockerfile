@@ -1,4 +1,4 @@
-FROM node:24-slim
+FROM node:22-slim
 
 USER root:root
 RUN apt-get update -y && apt-get install -y openssl
