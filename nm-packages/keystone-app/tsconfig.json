@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    // "module": "commonjs",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
