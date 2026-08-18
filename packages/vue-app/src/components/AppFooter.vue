@@ -1,39 +1,18 @@
-<template>
-  <v-footer
-    app
-    height="40"
-  >
-    <a
-      v-for="item in items"
-      :key="item.title"
-      class="d-inline-block mx-2 social-link"
-      :href="item.href"
-      rel="noopener noreferrer"
-      target="_blank"
-      :title="item.title"
-    >
-      <v-icon
-        :icon="item.icon"
-        :size="item.icon === '$vuetify' ? 24 : 16"
-      />
-    </a>
+<template lang="pug">
+v-footer(app, height="40")
+  a.d-inline-block.mx-2.social-link(
+    v-for="item in items",
+    :key="item.title",
+    :href="item.href",
+    rel="noopener noreferrer",
+    target="_blank",
+    :title="item.title"
+  )
+    v-icon(:icon="item.icon", :size="item.icon === '$vuetify' ? 24 : 16")/
 
-    <div
-      class="text-caption text-disabled"
-      style="position: absolute; right: 16px;"
-    >
-      &copy; 2016-{{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Vuetify, LLC</span>
-      —
-      <a
-        class="text-decoration-none on-surface"
-        href="https://vuetifyjs.com/about/licensing/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        MIT License
-      </a>
-    </div>
-  </v-footer>
+  div.text-caption.text-disabled(style="position: absolute; right: 16px;")
+    | &copy; 2016-{{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">Vuetify, LLC</span>
+    | — #[a.text-decoration-none.on-surface(href="https://vuetifyjs.com/about/licensing/", rel="noopener noreferrer", target="_blank") MIT License]
 </template>
 
 <script setup lang="ts">
